@@ -110,3 +110,26 @@ plot(pressure)
 knitr::kable(head((cars)))
 ```
 
+
+## Insert images
+
+Here is an inserted image
+
+![Sunstar](sunstar.png)
+
+
+
+
+## Insert text with footnotes
+
+Here is a footnote[^1] and a longnote[^longnote]
+
+
+[^1]: Here is a footnote.
+
+[^longnote]: Here is a long footnote.
+
+Here is an inline note ^[Inline notes are easier, because you do not have to pick an identifier]
+
+
+
