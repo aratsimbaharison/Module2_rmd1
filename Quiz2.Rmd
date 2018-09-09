@@ -2,7 +2,10 @@
 title: "The Air Quality Dataset"
 author: "Adrien M. Ratsimbaharison"
 date: "September 8, 2018"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
+bibliography: myBibliography.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -12,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Summary of Air Quality Dataset
 
 
-This exercise will be working with the built-in `air quality` dataset.^[ Chambers, J. M., Cleveland, W. S., Kleiner, B. and Tukey, P. A. (1983) Graphical Methods for Data Analysis. Belmont, CA: Wadsworth.] This dataset contains 154 daily air quality measurements in New York from May 1, 1973 (a Tuesday) to September 30, 1973. The dataset contains 6 variables:   
+This exercise will be working with the built-in `air quality` dataset.^[ Chambers, J. M., Cleveland, W. S., Kleiner, B. and Tukey, P. A. (1983) Graphical Methods for Data Analysis. Belmont, CA: Wadsworth.] This dataset contains 154 daily air quality measurements in New York from May 1, 1973 (a Tuesday) to September 30, 1973. [@degrootClimateChangeConflict2018, p. 20]The dataset contains 6 variables:   
 
 * **Ozone**: Mean ozone in parts per billion (_ppb_) from 1300 to 1500 hours at Roosevelt Island;   
 * **Solar.R**: Solar radiation in Langleys (_lang_) in the frequency band 4000-7700 Angstroms from 0800 to 1200 hours at Central Park;   
@@ -36,3 +39,6 @@ plot(airquality$Temp, airquality$Ozone,
         main="Airquality: Ozone by Temperature") 
 
 ```
+
+## References
+
