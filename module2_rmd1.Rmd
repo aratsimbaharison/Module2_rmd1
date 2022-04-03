@@ -99,7 +99,7 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-```{r pressure2, echo=FALSE, fig.height=5, fig.width=5}
+```{r pressure2, echo=FALSE, fig.height=5, fig.width=5, message=FALSE, warning=FALSE, paged.print=FALSE}
 plot(pressure)
 ```
 
